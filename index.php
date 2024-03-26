@@ -30,7 +30,7 @@ $result = $mysqli->query($query);
 
    <div class="header">
       <img src="icons/code-solid.svg" class="icon-small icon-white ml-1" alt="iconcina">
-      <a href="index.html"><img src="icons/Logo GB svg.svg" class="icon-mid" alt="logo"></a>
+      <a href="index.php"><img src="icons/Logo GB svg.svg" class="icon-mid" alt="logo"></a>
       <div class="header__icons r-center">
         <a href="https://wa.me/393475995047?text=Ciao Pietro vorrei segnalarti un bug: " target="_blank" rel="noopener noreferrer">
             <img src="icons/bug.svg" class="icon-small icon-white text" alt="bug">
@@ -40,12 +40,13 @@ $result = $mysqli->query($query);
    </div>
 
    <div class="grid mt-2">
+      
     <?php while($row = $result->fetch_assoc()): ?>
         <div class="col-33">
-            <div class="card v-center shadow">
+            <div class="card v-center shadow">   
                 <h3 class="text-2 text-white"><?= htmlspecialchars($row['username']) ?></h3>
                 <?php
-                // Assumendo di avere già la connessione al database in $conn
+         
                 $query = "SELECT foto_profilo FROM user WHERE username = ?";
                 $stmt = $mysqli->prepare($query);
                 $stmt->bind_param("s", $row['username']);

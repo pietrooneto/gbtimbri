@@ -11,7 +11,7 @@
 
    <div class="header">
       <img src="icons/code-solid.svg" class="icon-small icon-white ml-1" alt="iconcina">
-      <a href="index.html"><img src="icons/Logo GB svg.svg" class="icon-mid" alt="logo"></a>
+      <a href="index.php"><img src="icons/Logo GB svg.svg" class="icon-mid" alt="logo"></a>
       <div class="header__icons r-center">
         <a href="https://wa.me/393475995047?text=Ciao Pietro vorrei segnalarti un bug: " target="_blank" rel="noopener noreferrer">
             <img src="icons/bug.svg" class="icon-small icon-white text" alt="bug">
