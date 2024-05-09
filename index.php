@@ -13,7 +13,7 @@ if ($mysqli->connect_error) {
     die("Connessione fallita: " . $mysqli->connect_error);
 }
 
-
+//commento aggiunto da Al3xPaladino
 $query = "SELECT username FROM user";
 $result = $mysqli->query($query);
 ?>
